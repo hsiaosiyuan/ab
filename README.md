@@ -7,7 +7,7 @@ a golang toy similar ab(apache benchmarking tool)
 
 ## Example
 
-normal
+**normal**
 
     go run ab.go -H="test: test" -C="test=test" -H="test1:test1" -C="test1=test1" -n=10 -c=2 -E='http://example.com'
 
@@ -30,7 +30,7 @@ output
     HTML transferred: 12700  [bytes]
     Request per second: 1.89  [#/sec] (mean)
 
-escape cache
+**escape cache**
 
     go run ab.go -e='_ec' -H="test: test" -C="test=test" -H="test1:test1" -C="test1=test1" -n=10 -c=2 -E='http://example.com'
 
