@@ -88,6 +88,7 @@ func request() *perResult {
 				request.ContentLength = fi.Size()
 				request.Body = f
 				request.Header.Set("Content-Type", Cfg.ContentType)
+				result.bodySent = request.ContentLength
 			}
 		}
 	}else {
