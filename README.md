@@ -5,6 +5,16 @@ a golang toy similar ab(apache benchmarking tool)
 
     go run ab.go -h
 
+    -C=&[]: Cookie. add cookie to the request (repeatable)
+    -E="": Url of the endpoint for testing
+    -H=&[]: Custom header, append extra headers to the request (repeatable)
+    -T="application/x-www-form-urlencoded": Content-type header to use for POST/PUT data, eg. application/x-www-form-urlencoded. default: text/plain.
+    -c=1: Number of multiple requests to perform at a time
+    -e="": Parameter name will be appended in query string to escape cache. eg: '_ec=timestamp'
+    -n=1: Number of requests to perform for the benchmarking session
+    -p=: File containing data to POST, remember to also set -T
+    -t=3600: Time limit. maximum number of seconds to spend for benchmarking
+
 ## Example
 
 **normal**
