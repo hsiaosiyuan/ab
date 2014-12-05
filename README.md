@@ -1,5 +1,6 @@
-# a golang toy similar ab(apache benchmarking tool)
+## What's it
+a golang toy similar ab(apache benchmarking tool)
 
-## usage
+## Usage
 
     go run ab.go -h
