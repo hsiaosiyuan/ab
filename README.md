@@ -21,7 +21,7 @@ output
     Complete  8  requests
     Complete  10  requests
 
-    All request: 10
+    All requests: 10
     Time taken: 5.286  [second]
     Succeed requests: 10
     Failed requests: 0
@@ -44,7 +44,7 @@ output
     Complete  8  requests
     Complete  10  requests
 
-    All request: 10
+    All requests: 10
     Time taken: 3.644  [second]
     Succeed requests: 10
     Failed requests: 0
