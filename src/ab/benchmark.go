@@ -177,7 +177,7 @@ func Do(done chan int) {
 
 				fmt.Println()
 
-				fmt.Println("All request:", totalResult.allRequestCount)
+				fmt.Println("All requests:", totalResult.allRequestCount)
 				fmt.Println("Time taken:", float64(totalResult.totalSpend)/float64(1000), " [second]")
 				fmt.Println("Succeed requests:", totalResult.succeedCount)
 				fmt.Println("Failed requests:", totalResult.failedCount)
