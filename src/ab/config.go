@@ -64,7 +64,7 @@ type Config struct {
 	Cookies       Cookies // cookie. add cookie to the request
 	Headers       Headers // custom header, append extra headers to the request
 	Post          Post    // file containing data to POST, remember to also set -T
-	ContentType   string  // content-type header to use for POST/PUT data, eg. application/x-www-form-urlencoded. default: application/x-www-form-urlencoded.
+	ContentType   string  // content-type header to use for POST/PUT data, default: application/x-www-form-urlencoded.
 	TimeLimit     int     // time limit. maximum number of seconds to spend for benchmarking. default: 3600
 
 	EndPointParsed *url.URL
@@ -85,7 +85,7 @@ func ParseConfig() {
 	flag.Var(&Cfg.Cookies, "C", "Cookie. add cookie to the request (repeatable)")
 	flag.Var(&Cfg.Headers, "H", "Custom header, append extra headers to the request (repeatable)")
 	flag.Var(&Cfg.Post, "p", "File containing data to POST, remember to also set -T")
-	flag.StringVar(&Cfg.ContentType, "T", "application/x-www-form-urlencoded", "Content-type header to use for POST/PUT data, eg. application/x-www-form-urlencoded. default: text/plain.")
+	flag.StringVar(&Cfg.ContentType, "T", "application/x-www-form-urlencoded", "Content-type header to use for POST/PUT data, default: application/x-www-form-urlencoded.")
 
 	flag.Parse()
 
