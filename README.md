@@ -1,5 +1,5 @@
 ## What's it
-a golang toy similar ab(apache benchmarking tool)
+a golang toy similar to ab(apache benchmarking tool)
 
 ## Usage
 
